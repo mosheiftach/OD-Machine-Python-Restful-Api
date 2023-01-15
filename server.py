@@ -4,7 +4,7 @@ import pymongo
 
 app = Flask(__name__)
 client = pymongo.MongoClient(
-    "mongodb+srv://moshemoshe:qazQAZ123@cluster0.fandl.mongodb.net/?retryWrites=true&w=majority")
+    "**YOR MONGODB CONNECTION HERE**")
 app.config['DB'] = client.get_database('salarymanagement')
 db = app.config['DB']
 col_employees = db.employees
